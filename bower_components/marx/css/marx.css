@@ -312,6 +312,9 @@ input:not([type]):focus {
   border-color: #b3d4fc;
   outline: 0; }
 
+input[type="radio"] {
+  vertical-align: middle; }
+
 input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
   outline: .1rem solid thin #129fea; }
 
@@ -339,7 +342,8 @@ input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus,
 
 select {
   background-color: #fff;
-  border: .1rem solid #ddd; }
+  border: .1rem solid #ddd;
+  outline: 0; }
 
 select[multiple] {
   height: auto; }

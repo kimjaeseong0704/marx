@@ -1,3 +1,4 @@
+main,
 header,
 footer,
 nav,
@@ -12,9 +13,11 @@ summary {
   width: 100%;
 }
 
-.main {
+main {
+  display: inline-block;
   margin: 0 auto;
   max-width: $big-break;
+  overflow: hidden;
   padding: 0 $md-pad $md-pad;
 }
 
