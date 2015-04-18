@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "marx": "~1.0.1"
+    "marx": "~1.0.2"
   }
 }
