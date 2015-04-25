@@ -1,6 +1,6 @@
 {
   "name": "marx",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "homepage": "https://github.com/mblode/marx",
   "authors": [
     "mblode <m.blode@gmail.com>"
@@ -39,19 +39,18 @@
     "tests",
     "gulpfile.js",
     "package.json",
-    "LICENSE",
     "_site",
     "_sass",
-    "index.html"
+    "index.html",
+    "components"
   ],
-  "_release": "1.0.4",
+  "_release": "1.0.6",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.4",
-    "commit": "40450c9f8421c9fde5c9e5696d8448b0775b920f"
+    "tag": "v1.0.6",
+    "commit": "fda877a4126c97ff59fe5e48459d9c33b6289bec"
   },
   "_source": "git://github.com/mblode/marx.git",
-  "_target": "~1.0.4",
-  "_originalSource": "marx",
-  "_direct": true
+  "_target": "~1.0.2",
+  "_originalSource": "marx"
 }
