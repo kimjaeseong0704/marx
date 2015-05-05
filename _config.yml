@@ -1,14 +1,34 @@
-# Site settings
-title: Marx
-email: m.blode@gmail.com
-description: > # The classless CSS framework (perfect for Communists).
-baseurl: "/marx" # the subpath of your site, e.g. /blog/
-url: "http://mblode.github.io/marx" # the base hostname & protocol for your site
-twitter_username: mblode
-github_username:  mblode
+# Permalinks
+permalink:        "/:title"
+relative_permalinks: true
 
-# Build settings
-markdown: kramdown
+# Setup
+title:            Marx
+description:      The classless CSS framework (perfect for Communists).
+url:              http://mblode.github.io
+baseurl:          /marx
+paginate:         4
+author:
+  name:           Matthew Blode
+  url:            https://twitter.com/mblode
+  email:          m.blode@gmail.com
 
-exclude:
-  - node_modules
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/mblode/marx
+
+highlighter: pygments
+safe: true
+lsi: false
+
+sass:
+  style: :compressed
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "bower-components", "bower.json"]
+
+navigation:
+- text: Home
+  url: /
+- text: Documentation
+  url: /documentation.html

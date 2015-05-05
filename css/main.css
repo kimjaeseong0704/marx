@@ -1,3 +1,205 @@
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible; }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: visible; }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden; } }
+
+@keyframes slideOutLeft {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+
+  100% {
+    -webkit-transform: translate3d(-250px, 0, 0);
+            transform: translate3d(-250px, 0, 0);
+    visibility: hidden; } }
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+html, body.open {
+  height: 100%;
+  margin: 0;
+  min-height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative; }
+  body:after {
+    background: #046380;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .4;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+    visibility: hidden;
+    width: 100vw;
+    z-index: 10; }
+  body.open:after {
+    height: 100%;
+    opacity: 1;
+    visibility: visible; }
+
+.burger-nav {
+  position: absolute;
+  z-index: 11; }
+  .burger-nav:not(.open) {
+    visibility: hidden; }
+  .burger-nav li {
+    color: #fff;
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    -webkit-transform: translateX(-250px);
+        -ms-transform: translateX(-250px);
+            transform: translateX(-250px); }
+  .burger-nav li:not(.open) {
+    -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: slideOutLeft;
+            animation-name: slideOutLeft; }
+  .burger-nav li:first-child {
+    padding-top: 92px; }
+  .burger-nav.open {
+    visibility: visible; }
+    .burger-nav.open li {
+      -webkit-animation-duration: .4s;
+              animation-duration: .4s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-name: slideInLeft;
+              animation-name: slideInLeft; }
+
+.burger-link {
+  background: transparent;
+  border-left: #fff solid 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 10px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  width: auto; }
+
+.burger-link:hover, .burger-link.active {
+  border-left: #fff solid 2px;
+  padding-left: 30px; }
+
+.burger {
+  background: #046380;
+  border: white solid 2px;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  padding-left: 12px;
+  padding-top: 14px;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 52px;
+  z-index: 12; }
+
+.bun {
+  background: #fff;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+
+.bun-top {
+  height: 2px;
+  top: 0;
+  width: 24px; }
+
+.bun-mid {
+  height: 2px;
+  top: 8px;
+  width: 24px; }
+
+.bun-bottom {
+  height: 2px;
+  top: 16px;
+  width: 24px; }
+
+.burger-brand {
+  color: #046380;
+  font-size: 24px;
+  font-weight: 300;
+  left: 0;
+  margin-left: 30px;
+  position: relative;
+  text-decoration: none;
+  top: -17.4285714286px;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  z-index: 2000; }
+
+.burger-contain {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: auto; }
+  .burger-contain:hover:not(.open) .burger {
+    background: #0689b1; }
+  .burger-contain.open .burger {
+    border: #046380 solid 2px; }
+  .burger-contain.open .bun-top {
+    background: #fff;
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .burger-contain.open .bun-mid {
+    opacity: 0; }
+  .burger-contain.open .bun-bottom {
+    background: #fff;
+    top: 5px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .burger-contain.open .burger-brand {
+    color: #fff; }
+  .burger-contain.open:hover .burger {
+    border: white solid 2px; }
+
 :root {
   box-sizing: border-box;
   cursor: default;
@@ -205,6 +407,7 @@ dd {
   margin-left: 4rem; }
 
 ul, ol, menu {
+  list-style-position: inside;
   margin-bottom: 1.6rem;
   -webkit-padding-start: 4rem; }
 
@@ -274,6 +477,7 @@ hr {
 
 img {
   height: auto;
+  margin-right: 0.8rem;
   max-width: 100%;
   vertical-align: baseline; }
 
@@ -389,6 +593,8 @@ input[type=submit], button {
       -ms-user-select: none;
           user-select: none;
   vertical-align: baseline; }
+  input[type=submit] a, button a {
+    color: #444; }
 
 input[type=submit]::-moz-focus-inner, button::-moz-focus-inner {
   padding: 0; }
@@ -397,6 +603,8 @@ input[type=submit]:hover, button:hover {
   background: #444;
   border-color: #444;
   color: #fff; }
+  input[type=submit]:hover a, button:hover a {
+    color: #fff; }
 
 input[type=submit]:focus, button:focus {
   outline: 0; }
@@ -405,6 +613,8 @@ input[type=submit]:active, button:active {
   background: #6a6a6a;
   border-color: #6a6a6a;
   color: #fff; }
+  input[type=submit]:active a, button:active a {
+    color: #fff; }
 
 input[type=submit]:disabled, button:disabled {
   box-shadow: none;
@@ -493,5 +703,14 @@ tfoot td {
   font-style: italic;
   padding: 1.6rem 0.4rem; }
 
+nav {
+  background: #fff;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 0 4px 2px rgba(0, 0, 0, 0.12);
+  height: 72px; }
+  nav .brand {
+    font-size: 2rem;
+    line-height: 72px;
+    text-align: center; }
 
-/*# sourceMappingURL=marx.css.map */
+
+/*# sourceMappingURL=main.css.map */
