@@ -1,9 +1,9 @@
 <!-- Navigation -->
 <div class="burger-nav">
   {% if page.active == "home" %}
-      <li><a class="burger-link active" href="/">Home</a></li>
+      <li><a class="burger-link active" href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
   {% else %}
-      <li><a class="burger-link" href="/">Home</a></li>
+      <li><a class="burger-link" href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
   {% endif %}
   {% if page.active == "docs" %}
       <li><a class="burger-link active" href="{{ "/documentation" | prepend: site.baseurl }}">Documentation</a></li>
