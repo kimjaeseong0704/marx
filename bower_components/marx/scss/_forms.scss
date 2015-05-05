@@ -54,12 +54,10 @@ input[type="color"]:focus,
 select:focus,
 textarea:focus {
   border-color: $selection-background-color;
-  outline: 0;
 }
 
 input:not([type]):focus {
   border-color: $selection-background-color;
-  outline: 0;
 }
 
 input[type="radio"],
@@ -124,7 +122,6 @@ input[type="checkbox"]:focus:invalid:focus {
 select {
   background-color: $white;
   border: $border $silver;
-  outline: 0;
 }
 
 select[multiple] {

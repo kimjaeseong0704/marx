@@ -38,11 +38,6 @@ button:hover {
   }
 }
 
-input[type=submit]:focus,
-button:focus {
-  outline: 0;
-}
-
 input[type=submit]:active,
 button:active {
   background: lighten($black, 15);

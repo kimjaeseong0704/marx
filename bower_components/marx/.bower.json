@@ -1,11 +1,11 @@
 {
   "name": "marx",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "homepage": "https://github.com/mblode/marx",
   "authors": [
     "mblode <m.blode@gmail.com>"
   ],
-  "description": "The classless CSS framework (perfect for Communists).",
+  "description": "The stylish CSS reset.",
   "main": [
     "css/*.css",
     "scss/*.scss"
@@ -44,11 +44,11 @@
     "index.html",
     "components"
   ],
-  "_release": "1.0.7",
+  "_release": "1.0.9",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.7",
-    "commit": "15f6c8771e6d52d242a60665c581324cf7e8e79d"
+    "tag": "v1.0.9",
+    "commit": "50d83beda4e84322be16bc3c43f30f5593e1e2ec"
   },
   "_source": "git://github.com/mblode/marx.git",
   "_target": "~1.0.7",

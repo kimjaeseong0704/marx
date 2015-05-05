@@ -64,7 +64,6 @@ hr {
 
 img {
   height: auto;
-  margin-right: $sm-pad;
   max-width: 100%;
   vertical-align: baseline;
 }
@@ -76,5 +75,9 @@ img {
     clear: both;
     display: block;
     max-width: 100%;
+  }
+  
+  img {
+    margin-right: $md-pad;
   }
 }

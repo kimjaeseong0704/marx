@@ -6,7 +6,7 @@ relative_permalinks: true
 title:            Marx
 description:      The classless CSS framework (perfect for Communists).
 url:              http://mblode.github.io
-baseurl:          /marx
+baseurl:          
 paginate:         4
 author:
   name:           Matthew Blode

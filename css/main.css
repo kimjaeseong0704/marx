@@ -307,12 +307,6 @@ table {
   background-color: #b3d4fc;
   text-shadow: none; }
 
-:focus {
-  outline: none; }
-
-::-moz-focus-inner {
-  border: 0; }
-
 button::-moz-focus-inner {
   border: 0; }
 
@@ -407,7 +401,6 @@ dd {
   margin-left: 4rem; }
 
 ul, ol, menu {
-  list-style-position: inside;
   margin-bottom: 1.6rem;
   -webkit-padding-start: 4rem; }
 
@@ -477,7 +470,6 @@ hr {
 
 img {
   height: auto;
-  margin-right: 0.8rem;
   max-width: 100%;
   vertical-align: baseline; }
 
@@ -485,7 +477,9 @@ img {
   article, section, aside {
     clear: both;
     display: block;
-    max-width: 100%; } }
+    max-width: 100%; }
+  img {
+    margin-right: 1.6rem; } }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], select, textarea {
   border: .1rem solid #ccc;
@@ -509,12 +503,10 @@ input[type="color"] {
   padding: 0.8rem 1.6rem; }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, select:focus, textarea:focus {
-  border-color: #b3d4fc;
-  outline: 0; }
+  border-color: #b3d4fc; }
 
 input:not([type]):focus {
-  border-color: #b3d4fc;
-  outline: 0; }
+  border-color: #b3d4fc; }
 
 input[type="radio"], input[type="checkbox"] {
   vertical-align: middle; }
@@ -546,8 +538,7 @@ input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus,
 
 select {
   background-color: #fff;
-  border: .1rem solid #ccc;
-  outline: 0; }
+  border: .1rem solid #ccc; }
 
 select[multiple] {
   height: auto; }
@@ -605,9 +596,6 @@ input[type=submit]:hover, button:hover {
   color: #fff; }
   input[type=submit]:hover a, button:hover a {
     color: #fff; }
-
-input[type=submit]:focus, button:focus {
-  outline: 0; }
 
 input[type=submit]:active, button:active {
   background: #6a6a6a;
