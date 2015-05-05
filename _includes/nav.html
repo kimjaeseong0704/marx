@@ -6,9 +6,9 @@
       <li><a class="burger-link" href="/">Home</a></li>
   {% endif %}
   {% if page.active == "docs" %}
-      <li><a class="burger-link active" href="{{ "documentation.html" | prepend: site.baseurl }}">Documentation</a></li>
+      <li><a class="burger-link active" href="{{ "/documentation" | prepend: site.baseurl }}">Documentation</a></li>
   {% else %}
-      <li><a class="burger-link" href="{{ "documentation.html" | prepend: site.baseurl }}">Documentation</a></li>
+      <li><a class="burger-link" href="{{ "/documentation" | prepend: site.baseurl }}">Documentation</a></li>
   {% endif %}
   <li><a class="burger-link" href="https://github.com/mblode/marx" target="_blank">GitHub - Marx</a></li>
   <li><a class="burger-link" href="https://github.com/mblode" target="_blank">Github - mblode</a></li>
