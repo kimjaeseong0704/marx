@@ -34,7 +34,7 @@ gulp.task('js', ['js-hint'], function () {
     }))
 		.pipe($g.sourcemaps.init({loadMaps: true}))
 				.pipe($g.uglify())
-		.pipe($g.sourcemaps.write('./'))
+		.pipe($g.sourcemaps.write('.'))
 		.pipe(gulp.dest('public/js/'));
 });
 
