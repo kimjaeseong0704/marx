@@ -9,3 +9,9 @@ nav {
     text-align: center;
   }
 }
+
+.hero {
+  border-bottom: $border $trans-light;
+  border-top: 0;
+  margin-bottom: $md-pad;
+}

@@ -65,18 +65,18 @@ gulp.task('sass', ['scss-lint'], function () {
 			cascade: true
 		}))
     .pipe($g.sourcemaps.write('.'))
-		.pipe(gulp.dest('_site/css'))
+		.pipe(gulp.dest('_site/css/'))
 		.pipe(browserSync.reload({
 			stream: true
 		}))
-		.pipe(gulp.dest('css'));
+		.pipe(gulp.dest('css/'));
 });
 
 gulp.task('watch', ['images', 'js-hint', 'js', 'scss-lint', 'sass', 'browser-sync'], function () {
 	gulp.watch('_sass/**/*.scss', ['scss-lint', 'sass', 'jekyll-rebuild']);
 	gulp.watch('public/_js-build/*.js', ['js', 'jekyll-rebuild']);
 	gulp.watch('public/_images-build/*.*', ['images', reload]);
-	gulp.watch(['index.html', '_layouts/*.html', '_includes/*.html',
+	gulp.watch(['index.html', '*.html', '_layouts/*.html', '_includes/*.html',
 		'_posts/*'
 	], [
 		'jekyll-rebuild'

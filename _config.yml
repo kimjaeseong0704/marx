@@ -4,9 +4,9 @@ relative_permalinks: true
 
 # Setup
 title:            Marx
-description:      The classless CSS framework (perfect for Communists).
+description:      The stylish CSS reset.
 url:              http://mblode.github.io
-baseurl:          /marx
+baseurl:
 paginate:         4
 author:
   name:           Matthew Blode
@@ -14,7 +14,7 @@ author:
   email:          m.blode@gmail.com
 
 # Custom vars
-version:          1.0.0
+version:          1.1.0
 github:
   repo:           https://github.com/mblode/marx
 
@@ -22,13 +22,4 @@ highlighter: pygments
 safe: true
 lsi: false
 
-sass:
-  style: :compressed
-
 exclude: ["node_modules", "gulpfile.js", "package.json", "bower-components", "bower.json"]
-
-navigation:
-- text: Home
-  url: /
-- text: Documentation
-  url: /documentation.html
