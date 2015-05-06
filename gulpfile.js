@@ -83,4 +83,6 @@ gulp.task('watch', ['images', 'js-hint', 'js', 'scss-lint', 'sass', 'browser-syn
 	]);
 });
 
+gulp.task('build', ['images', 'js-hint', 'js', 'scss-lint', 'sass']);
+
 gulp.task('default', ['images', 'js-hint', 'js', 'scss-lint', 'sass', 'browser-sync', 'watch']);

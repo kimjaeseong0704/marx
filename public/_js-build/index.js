@@ -2,7 +2,7 @@
 
 tailor.init(function () {
     tailor.trackSuccess();
-});å
+});
 
 $('#download').click(function (e) {
     e.preventDefault();
