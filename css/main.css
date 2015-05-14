@@ -39,74 +39,64 @@
     visibility: hidden; } }
 
 * {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent; }
+  box-sizing: border-box; }
 
-html, body.open {
+body:after {
+  background: #2196f3;
+  content: '';
   height: 100%;
-  margin: 0;
-  min-height: 100%; }
-
-body {
-  margin: 0;
-  overflow: hidden;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
   padding: 0;
-  position: relative; }
-  body:after {
-    background: #046380;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: .4;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
-    visibility: hidden;
-    width: 100vw;
-    z-index: 10; }
-  body.open:after {
-    height: 100%;
-    opacity: 1;
-    visibility: visible; }
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  width: 100%; }
+body.open {
+  overflow: hidden; }
+body.open:after {
+  opacity: 1;
+  visibility: visible; }
 
-.burger-nav {
+.b-nav {
   position: absolute;
   z-index: 11; }
-  .burger-nav:not(.open) {
+  .b-nav:not(.open) {
     visibility: hidden; }
-  .burger-nav li {
-    color: #fff;
+  .b-nav li {
+    color: white;
     list-style-type: none;
     padding: 10px;
     text-align: left;
     -webkit-transform: translateX(-250px);
         -ms-transform: translateX(-250px);
             transform: translateX(-250px); }
-  .burger-nav li:not(.open) {
-    -webkit-animation-duration: .4s;
-            animation-duration: .4s;
+  .b-nav li:not(.open) {
+    -webkit-animation-duration: 0.4s;
+            animation-duration: 0.4s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     -webkit-animation-name: slideOutLeft;
             animation-name: slideOutLeft; }
-  .burger-nav li:first-child {
+  .b-nav li:first-child {
     padding-top: 92px; }
-  .burger-nav.open {
+  .b-nav.open {
     visibility: visible; }
-    .burger-nav.open li {
-      -webkit-animation-duration: .4s;
-              animation-duration: .4s;
+    .b-nav.open li {
+      -webkit-animation-duration: 0.4s;
+              animation-duration: 0.4s;
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both;
       -webkit-animation-name: slideInLeft;
               animation-name: slideInLeft; }
 
-.burger-link {
+.b-link {
   background: transparent;
-  border-left: #fff solid 0;
-  color: #fff;
+  border-left: rgba(255, 255, 255, 0) solid 2px;
+  color: white;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   margin-left: 10px;
@@ -114,20 +104,19 @@ body {
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
   width: auto; }
+  .b-link:hover, .b-link--active {
+    border-left: white solid 2px;
+    padding-left: 30px; }
 
-.burger-link:hover, .burger-link.active {
-  border-left: #fff solid 2px;
-  padding-left: 30px; }
-
-.burger {
-  background: #046380;
-  border: white solid 2px;
+.b-menu {
+  background: #2196f3;
+  border: #2196f3 solid 2px;
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
   height: 52px;
-  padding-left: 12px;
-  padding-top: 14px;
+  padding-left: 13px;
+  padding-top: 15px;
   position: relative;
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
@@ -137,68 +126,65 @@ body {
           user-select: none;
   width: 52px;
   z-index: 12; }
+  .b-menu:hover {
+    border: white solid 2px; }
 
-.bun {
-  background: #fff;
+.b-bun {
+  background: white;
   position: relative;
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease; }
+  .b-bun--top {
+    height: 2px;
+    top: 0;
+    width: 22px; }
+  .b-bun--mid {
+    height: 2px;
+    top: 8px;
+    width: 22px; }
+  .b-bun--bottom {
+    height: 2px;
+    top: 16px;
+    width: 22px; }
 
-.bun-top {
-  height: 2px;
-  top: 0;
-  width: 24px; }
-
-.bun-mid {
-  height: 2px;
-  top: 8px;
-  width: 24px; }
-
-.bun-bottom {
-  height: 2px;
-  top: 16px;
-  width: 24px; }
-
-.burger-brand {
-  color: #046380;
+.b-brand {
+  color: #2196f3;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
-  left: 0;
   margin-left: 30px;
   position: relative;
   text-decoration: none;
   top: -17.4285714286px;
   -webkit-transition: all 0.4s ease;
           transition: all 0.4s ease;
-  z-index: 2000; }
+  z-index: 13; }
 
-.burger-contain {
+.b-container {
+  height: 52px;
   left: 10px;
   position: absolute;
-  top: 10px;
-  width: auto; }
-  .burger-contain:hover:not(.open) .burger {
-    background: #0689b1; }
-  .burger-contain.open .burger {
-    border: #046380 solid 2px; }
-  .burger-contain.open .bun-top {
-    background: #fff;
+  top: 10px; }
+  .b-container:hover:not(.open) .bun-top, .b-container:hover:not(.open) .bun-mid, .b-container:hover:not(.open) .bun-bottom {
+    background: #2196f3; }
+  .b-container.open .b-main {
+    border: white solid 2px; }
+  .b-container.open .b-bun--top {
+    background: white;
     top: 9px;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
-  .burger-contain.open .bun-mid {
+  .b-container.open .b-bun--mid {
     opacity: 0; }
-  .burger-contain.open .bun-bottom {
-    background: #fff;
+  .b-container.open .b-bun--bottom {
+    background: white;
     top: 5px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .burger-contain.open .burger-brand {
-    color: #fff; }
-  .burger-contain.open:hover .burger {
-    border: white solid 2px; }
+  .b-container.open .b-brand {
+    color: white; }
 
 :root {
   box-sizing: border-box;
@@ -332,17 +318,17 @@ h1 {
   border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
   font-size: 3.6rem;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 500; }
 
 h2 {
   font-size: 3rem;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 500; }
 
 h3 {
   font-size: 2.4rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   margin: 1.6rem 0 0.4rem; }
 
 h4 {
