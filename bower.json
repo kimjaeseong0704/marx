@@ -16,10 +16,6 @@
   ],
   "dependencies": {
     "marx": "~1.1.2",
-    "burger": "~1.3.4"
-  },
-  "resolutions": {
-    "burger": "~2.0.1",
-    "marx": "~1.1.0"
+    "burger": "~2.0.2"
   }
 }
