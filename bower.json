@@ -1,6 +1,6 @@
 {
   "name": "marx",
-  "version": "1.0.6",
+  "version": "1.2.1",
   "homepage": "https://github.com/mblode/marx",
   "authors": [
     "mblode <m.blode@gmail.com>"
@@ -15,11 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "marx": "~1.1.1",
+    "marx": "~1.2.1",
     "burger": "~1.3.4"
   },
   "resolutions": {
     "burger": "~1.3.4",
-    "marx": "~1.1.0"
+    "marx": "~1.2.1"
   }
 }
