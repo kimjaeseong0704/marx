@@ -5,45 +5,17 @@
   "authors": [
     "mblode <m.blode@gmail.com>"
   ],
-  "description": "The stylish CSS reset.",
-  "main": [
-    "css/*.css",
-    "scss/*.scss"
-  ],
-  "keywords": [
-    "marx",
-    "karl",
-    "mblode",
-    "matthew blode",
-    "matt",
-    "blode",
-    "layout",
-    "framework",
-    "css",
-    "sass",
-    "scss",
-    "web",
-    "frontend",
-    "bootstrap",
-    "pure",
-    "markdown",
-    "format",
-    "classless"
-  ],
+  "description": "The classless CSS framework (perfect for Communists).",
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    "gulpfile.js",
-    "package.json",
-    "_site",
-    "_sass",
-    "_posts",
-    "index.html",
-    "components"
+    "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "marx": "~1.3.0",
+    "burger": "~1.3.4"
+  }
 }

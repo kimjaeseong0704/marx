@@ -1,10 +1,6 @@
 {
   "name": "marx",
-<<<<<<< HEAD
   "version": "1.2.1",
-=======
-  "version": "1.1.2",
->>>>>>> 8764a88f885a071efe648de98c68146623be3674
   "homepage": "https://github.com/mblode/marx",
   "authors": [
     "mblode <m.blode@gmail.com>"
@@ -49,11 +45,5 @@
     "index.html",
     "components"
   ],
-<<<<<<< HEAD
   "dependencies": {}
-=======
-  "dependencies": {
-    "burger": "~2.0.1"
-  }
->>>>>>> 8764a88f885a071efe648de98c68146623be3674
 }

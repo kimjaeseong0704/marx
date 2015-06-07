@@ -46,14 +46,15 @@ These are the files that are generated from `bower install burger`
 ├── bower.json
 └── dist
     ├── css
-    │   ├── burger..min.css
-    │   └── burger.min.css.map
+    │   ├── burger.css
+    │   └── burger.min.css
     ├── index.html
     ├── scripts
     │   ├── burger.js
-    │   ├── burger.min.js.map
     │   └── burger.min.js
-    └── sass
+    └── scss
+        ├── _burger.scss
+        ├── _config.scss
         └── burger.scss
 ```
 
@@ -61,23 +62,23 @@ These are the files that are generated from `bower install burger`
 ### HTML Markup
 ```
   <!-- Navigation -->
-  <div class="b-nav">
-    <li><a class="b-link b-link--active" href="#">Home</a></li>
-    <li><a class="b-link" href="#">About</a></li>
-    <li><a class="b-link" href="#">Portfolio</a></li>
-    <li><a class="b-link" href="#">Contact</a></li>
+  <div class="burger-nav">
+    <li><a class="burger-link active" href="#">Home</a></li>
+    <li><a class="burger-link" href="#">About</a></li>
+    <li><a class="burger-link" href="#">Portfolio</a></li>
+    <li><a class="burger-link" href="#">Contact</a></li>
   </div>
 
   <!-- Burger-Icon -->
-  <div class="b-container">
-    <div class="b-menu">
-      <div class="b-bun b-bun--top"></div>
-      <div class="b-bun b-bun--mid"></div>
-      <div class="b-bun b-bun--bottom"></div>
+  <div class="burger-contain">
+    <div class="burger">
+      <div class="bun bun-top"></div>
+      <div class="bun bun-mid"></div>
+      <div class="bun bun-bottom"></div>
     </div>
 
     <!-- Burger-Brand -->
-    <a href="#" class="b-brand">Burger</a>
+    <a href="#" class="burger-brand">Burger</a>
   </div>
 ```
 
@@ -99,6 +100,3 @@ Pull requests are the way to go.
 - <https://twitter.com/mblode>
 - <https://github.com/mblode>
 - <http://codepen.io/mblode>
-
-## License
-MIT © [Matthew Blode](http://mblode.github.io)

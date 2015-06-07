@@ -1,10 +1,6 @@
 {
   "name": "marx",
-<<<<<<< HEAD
-  "version": "1.2.1",
-=======
-  "version": "1.1.2",
->>>>>>> 8764a88f885a071efe648de98c68146623be3674
+  "version": "1.3.0",
   "homepage": "https://github.com/mblode/marx",
   "authors": [
     "mblode <m.blode@gmail.com>"
@@ -49,30 +45,15 @@
     "index.html",
     "components"
   ],
-<<<<<<< HEAD
   "dependencies": {},
-  "_release": "1.2.1",
+  "_release": "1.3.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.2.1",
-    "commit": "0735faa265b68fcdd30ca9318e6b3e58ed75aa3e"
+    "tag": "v1.3.0",
+    "commit": "6225145afc76e3c656107e54f2ea395314db2822"
   },
   "_source": "git://github.com/mblode/marx.git",
-  "_target": "~1.2.1",
+  "_target": "~1.3.0",
   "_originalSource": "marx",
   "_direct": true
-=======
-  "dependencies": {
-    "burger": "~2.0.1"
-  },
-  "_release": "1.1.2",
-  "_resolution": {
-    "type": "version",
-    "tag": "v1.1.2",
-    "commit": "2ad75ca8b1dcc0b652eefbc3f35fc4437e1b9da9"
-  },
-  "_source": "git://github.com/mblode/marx.git",
-  "_target": "~1.1.2",
-  "_originalSource": "marx"
->>>>>>> 8764a88f885a071efe648de98c68146623be3674
 }
