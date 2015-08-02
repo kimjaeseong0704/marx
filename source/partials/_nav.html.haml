@@ -1,0 +1,26 @@
+.b-nav
+  %li
+    %li{ nav_active('index.html') }
+      = link_to '/index.html', :class => 'b-link' do
+        Home
+    %li{ nav_active('documentation.html') }
+      = link_to '/documentation.html', :class => 'b-link' do
+        Documentation
+    %li
+      = link_to '/work.html', :class => 'b-link' do
+        GitHub - Marx
+    %li
+      = link_to 'https://github.com/mblode', :class => 'b-link' do
+        GitHub - Marx
+
+.b-container
+  .b-menu
+    .b-bun.b-bun--top
+    .b-bun.b-bun--mid
+    .b-bun.b-bun--bottom
+
+%nav
+  %ul
+    %li
+      = link_to '/index.html', :class => 'brand' do
+        Marx
