@@ -14,7 +14,7 @@ set :images_dir, 'images'
 
 helpers do
   def nav_active(path)
-    current_page.path == path ? {:class => "b-link--active"} : {}
+    current_page.path == path ? {:class => "active"} : {}
   end
 end
 

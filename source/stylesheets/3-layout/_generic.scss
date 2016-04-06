@@ -15,8 +15,12 @@ nav {
   }
 
   li {
-    padding: $md-pad;
     display: inline;
+    padding: $md-pad;
+
+    &.active{
+      color: $text;
+    }
   }
 }
 
