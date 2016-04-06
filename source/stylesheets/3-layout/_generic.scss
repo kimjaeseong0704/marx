@@ -1,13 +1,22 @@
 nav {
   background: $white;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1), 0 0 4px 2px rgba(0, 0, 0, .12);
-  height: 72px;
+  height: auto;
   width: 100%;
 
+  ul {
+    padding-bottom: $sm-pad;
+    padding-top: $sm-pad;
+  }
+
   .brand {
-    font-size: 2rem;
-    line-height: 36px;
+    font-size: 1.5rem;
     text-align: center;
+  }
+
+  li {
+    padding: $md-pad;
+    display: inline;
   }
 }
 
