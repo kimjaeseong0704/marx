@@ -2,15 +2,9 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions']
 end
 
-activate :automatic_image_sizes
-
-activate :livereload
-
 set :relative_links, true
 
 activate :directory_indexes
-
-sprockets.append_path File.join root, 'source/javascripts'
 
 set :css_dir, 'stylesheets'
 
@@ -33,15 +27,12 @@ configure :build do
 
   activate :relative_assets
 
-  activate :imageoptim
-
   activate :minify_html
 
   activate :gzip
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'gh-pages'
-  deploy.build_before = true
 end

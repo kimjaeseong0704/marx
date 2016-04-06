@@ -1,17 +1,12 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 @import
-'1-vendors/burger';
-
-@import
-'2-marx/variables',
 '2-marx/sanitize',
+'2-marx/variables',
+'2-marx/base',
 '2-marx/typography',
-'2-marx/config',
-'2-marx/html',
-'2-marx/forms',
+'2-marx/form',
 '2-marx/buttons',
-'2-marx/navigation',
 '2-marx/tables';
 
 @import
