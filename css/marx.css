@@ -26,6 +26,9 @@ button:-moz-focusring,
 input:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
+
+
+
 button,
 select {
   text-transform: none; }
